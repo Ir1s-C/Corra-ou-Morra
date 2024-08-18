@@ -1,19 +1,53 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Arrastar : MonoBehaviour
 {
-    private bool arrastar;
-    // Start is called before the first frame update
+    public GameObject player;
+    public Vector3 offset;
+    private bool grudar = false;
+    private bool jogadorProximo = false;
+
     void Start()
     {
-        arrastar = false;
+        if (player == null)
+        {
+            Debug.LogError("Player não atribuído no Inspector.");
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // Verifica se o jogador está pressionando a tecla P e se a mesa deve grudar
+        if (Input.GetKey(KeyCode.P) && jogadorProximo)
+        {
+            grudar = true;
+        }
+        else
+        {
+            grudar = false;
+        }
+
+        if (grudar && player != null)
+        {
+            // Atualiza a posição da mesa para seguir o player com o deslocamento
+            transform.position = player.transform.position + offset;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject == player)
+        {
+            jogadorProximo = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject == player)
+        {
+            jogadorProximo = false;
+            grudar = false;  // Desativa o grudar quando o jogador sai do trigger
+        }
     }
 }
