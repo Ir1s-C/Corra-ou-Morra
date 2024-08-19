@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Mesa
+  - Chave
+  - Entrar
   layers:
   - Default
   - TransparentFX
