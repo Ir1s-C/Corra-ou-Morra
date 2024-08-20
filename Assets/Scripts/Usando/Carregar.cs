@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class Carregar : MonoBehaviour
 
 {
-    bool podeInteragir = false; public GameObject Jogador;
+    public GameObject Jogador;
+    bool podeInteragir = false; 
     public string CenaACarregar;
 
     void Update()

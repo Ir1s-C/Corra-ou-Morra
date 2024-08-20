@@ -27,7 +27,7 @@ public class Chave : MonoBehaviour
             if (hasKey)
             {
                 // Carrega a próxima cena (substitua "NextSceneName" pelo nome real da sua cena)
-                SceneManager.LoadScene("Menu"); 
+                SceneManager.LoadScene("Porao"); 
             }
             else
             {
