@@ -19,6 +19,11 @@ public class Menu : MonoBehaviour
    {
       SceneManager.LoadScene("Menu");
    }
+
+   public void Tutorial()
+   {
+      SceneManager.LoadScene("Tutorial");
+   }
    
    public void Sair()
    {

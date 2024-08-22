@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Creditos.unity
-    guid: 88314eb8217f62a44853da8b81a06f14
-  - enabled: 1
     path: Assets/Scenes/Casa/Game.unity
     guid: 4ecd6fd764f03bf49934c00c938b4da0
   - enabled: 1
@@ -20,4 +17,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Casa/DentroDaCasa.unity
     guid: 8be8044377aaf444a9e3f21147ba4908
+  - enabled: 1
+    path: Assets/Scenes/Casa/Vai.unity
+    guid: daa87e8449f08ed42a17be0c44ff30fe
+  - enabled: 1
+    path: Assets/Scenes/Casa/Boneca.unity
+    guid: d22dd3b73099cef49938a1acf44b38d6
+  - enabled: 1
+    path: Assets/Scenes/Casa/Quarto.unity
+    guid: 5a5a75ce56183d54caf1f67a5c2c3d29
+  - enabled: 1
+    path: Assets/Scenes/Casa/QuartoDnv.unity
+    guid: 0c88902f23237a648821c6675658e9b4
+  - enabled: 1
+    path: Assets/Scenes/Casa/QuartoVolta.unity
+    guid: 45b6a48567e154645868fd0badf56293
+  - enabled: 1
+    path: Assets/Scenes/Casa/BonecaVolta.unity
+    guid: 2a07f1bc59b899344a77fc1fcf50be35
+  - enabled: 1
+    path: Assets/Scenes/Casa/Porao.unity
+    guid: 6e0253b4e8c13bc4eaaf20345dcbb21f
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: b72f169d6d50d824ea9976e56f1325d5
   m_configObjects: {}
